@@ -2,14 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/SeekBarSong"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rapviet"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/Textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="List"
@@ -21,20 +20,20 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
-        android:id="@+id/ButtonPre"
+        android:id="@+id/ImageButtonPre"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="40dp"
         android:src="@drawable/baseline_skip_previous_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ButtonPlay"
+        app:layout_constraintEnd_toStartOf="@+id/ImageButtonPlay"
         app:layout_constraintHorizontal_bias="0.314"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonNext"
+        android:id="@+id/ImageButtonNext"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
@@ -45,37 +44,40 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonPause"
+        android:id="@+id/ImageButtonStop"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="40dp"
         android:src="@drawable/baseline_pause_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ButtonNext"
+        app:layout_constraintEnd_toStartOf="@+id/ImageButtonNext"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/ButtonPlay"
+        android:id="@+id/ImageButtonPlay"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="40dp"
         android:src="@drawable/baseline_play_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ButtonPause"
+        app:layout_constraintEnd_toStartOf="@+id/ImageButtonStop"
         tools:ignore="MissingConstraints" />
 
     <SeekBar
+        android:id="@+id/SeekBarSong"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/TextTime"
+        android:id="@+id/TextViewTimeSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="152dp"
@@ -87,7 +89,7 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
-        android:id="@+id/TextTimeSongTotal"
+        android:id="@+id/TextViewTimeSongTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="152dp"
